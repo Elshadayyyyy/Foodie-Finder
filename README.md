@@ -1,10 +1,10 @@
-### Foodie Finder: Discover Meals Around the World
-# Project Overview
+# Foodie Finder: Discover Meals Around the World
+## Project Overview
 Foodie Finder is a modern, responsive web application. It allows users to explore a vast collection of recipes from around the world by integrating with TheMealDB public API. Users can search for meals by name, ingredient, or category, view detailed recipes and cooking instructions, and even save their favorite dishes locally.
 
 
 
-# Features
+## Features
 Dynamic Meal Search:
 Meal Detail Page:
 Category Browsing:
@@ -13,31 +13,24 @@ Favorites Feature:
 Responsive Layout:
 Seamless Navigation:
 
-# Technologies Used
+## Technologies Used
 Frontend Framework: React (with Vite for fast development)
-
 Styling: Tailwind CSS
-
 UI Components: ShadCN UI
-
 HTTP Client: Axios
-
 Routing: React Router DOM
-
 API: TheMealDB API
-
 Local Storage: For persisting user favorites.
 
-# Getting Started
+## Getting Started
 
-
-# Installation
+### Installation
 Clone the repository:
 
 git clone https://github.com/Elshadayyyyy/Foodie-Finder.git
 cd Foodie-Finder
 
-# Install dependencies:
+### Install dependencies:
 
 npm install
 
@@ -52,7 +45,7 @@ npx shadcn@latest add tabs
 npx shadcn@latest add scroll-area
 npx shadcn@latest add skeleton
 
-# Running the Application
+### Running the Application
 To start the development server:
 
 npm run dev
