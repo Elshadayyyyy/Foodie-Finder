@@ -7,7 +7,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select'; // ShadCN Select
+} from '@/components/ui/select'; 
 
 interface SearchBarProps {
   onSearch: (term: string, type: 'name' | 'ingredient' | 'category') => void;
@@ -31,7 +31,6 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
 
   return (
     <div className="flex flex-col md:flex-row gap-4 items-center w-full max-w-2xl mx-auto mb-8">
-      {/* Dropdown for search type */}
       <Select value={searchType} onValueChange={(value: 'name' | 'ingredient' | 'category') => setSearchType(value)}>
         <SelectTrigger className="w-full md:w-[180px] bg-secondary text-secondary-foreground border-border focus:ring-primary">
           <SelectValue placeholder="Search by..." />

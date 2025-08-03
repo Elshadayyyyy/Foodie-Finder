@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Meal } from '@/services/mealApi';
-import FavoriteToggle from './FavoriteToggle'; // Import the new FavoriteToggle component
+import FavoriteToggle from './FavoriteToggle'; 
 
 interface MealCardProps {
   meal: Meal;
@@ -10,10 +10,9 @@ interface MealCardProps {
 const MealCard: React.FC<MealCardProps> = ({ meal }) => {
   return (
     <Card className="relative w-full h-full flex flex-col justify-between overflow-hidden shadow-lg border-2 border-transparent hover:border-primary transition-all duration-300 transform hover:-translate-y-1">
-      {/* Favorite Toggle Button */}
       <FavoriteToggle mealId={meal.idMeal} />
 
-      <Link to={`/meal/${meal.idMeal}`} className="block h-full"> {/* Link wraps the entire card content except for the toggle */}
+      <Link to={`/meal/${meal.idMeal}`} className="block h-full">
         <CardHeader className="p-0">
           <img
             src={meal.strMealThumb}

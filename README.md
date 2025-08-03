@@ -1,69 +1,60 @@
-# React + TypeScript + Vite
+### Foodie Finder: Discover Meals Around the World
+# Project Overview
+Foodie Finder is a modern, responsive web application. It allows users to explore a vast collection of recipes from around the world by integrating with TheMealDB public API. Users can search for meals by name, ingredient, or category, view detailed recipes and cooking instructions, and even save their favorite dishes locally.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Features
+Dynamic Meal Search:
+Meal Detail Page:
+Category Browsing:
+Random Meal Generator:
+Favorites Feature:
+Responsive Layout:
+Seamless Navigation:
 
-## Expanding the ESLint configuration
+# Technologies Used
+Frontend Framework: React (with Vite for fast development)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Styling: Tailwind CSS
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+UI Components: ShadCN UI
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+HTTP Client: Axios
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Routing: React Router DOM
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+API: TheMealDB API
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Local Storage: For persisting user favorites.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Getting Started
+
+
+# Installation
+Clone the repository:
+
+git clone https://github.com/Elshadayyyyy/Foodie-Finder.git
+cd Foodie-Finder
+
+# Install dependencies:
+
+npm install
+
+Ensure ShadCN UI components are installed:
+If you encounter "Cannot find module" errors for ShadCN components, run the following commands:
+
+npx shadcn@latest add select
+npx shadcn@latest add button
+npx shadcn@latest add card
+npx shadcn@latest add input
+npx shadcn@latest add tabs
+npx shadcn@latest add scroll-area
+npx shadcn@latest add skeleton
+
+# Running the Application
+To start the development server:
+
+npm run dev
+
+The application should now be running at http://localhost:5173/ (or another port if 5173 is in use).
