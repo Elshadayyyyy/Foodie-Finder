@@ -1,7 +1,5 @@
 const FAVORITES_KEY = 'foodieFinderFavorites';
-/**
- * @returns
- */
+
 export const getFavorites = (): string[] => {
   try {
     const favorites = localStorage.getItem(FAVORITES_KEY);
@@ -12,10 +10,6 @@ export const getFavorites = (): string[] => {
   }
 };
 
-/**
- * @param mealId
- * @returns 
- */
 export const addFavorite = (mealId: string): string[] => {
   const favorites = getFavorites();
   if (!favorites.includes(mealId)) {
@@ -26,11 +20,6 @@ export const addFavorite = (mealId: string): string[] => {
   return favorites; 
 };
 
-/**
- 
- * @param mealId 
- * @returns 
- */
 export const removeFavorite = (mealId: string): string[] => {
   const favorites = getFavorites();
   const updatedFavorites = favorites.filter(id => id !== mealId);
@@ -38,10 +27,6 @@ export const removeFavorite = (mealId: string): string[] => {
   return updatedFavorites;
 };
 
-/**
- * @param mealId 
- * @returns 
- */
 export const isFavorite = (mealId: string): boolean => {
   const favorites = getFavorites();
   return favorites.includes(mealId);
