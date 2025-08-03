@@ -1,10 +1,9 @@
-### Foodie Finder: Discover Meals Around the World
-# Project Overview
+# Foodie Finder: Discover Meals Around the World
+## Project Overview
 Foodie Finder is a modern, responsive web application. It allows users to explore a vast collection of recipes from around the world by integrating with TheMealDB public API. Users can search for meals by name, ingredient, or category, view detailed recipes and cooking instructions, and even save their favorite dishes locally.
 
-
-
 # Features
+
 Dynamic Meal Search:
 Meal Detail Page:
 Category Browsing:
@@ -51,8 +50,8 @@ npx shadcn@latest add input
 npx shadcn@latest add tabs
 npx shadcn@latest add scroll-area
 npx shadcn@latest add skeleton
-
 # Running the Application
+
 To start the development server:
 
 npm run dev
